@@ -10,11 +10,11 @@
         <div @click="fadeOthers($event)">تالتة بنات</div>
       </div>
       <div class="categories" v-if="oula_welad">
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][1] }" @click="toggleCategory('أولى ولاد', 1)"> القيامة 1</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][2] }" @click="toggleCategory('أولى ولاد', 2)"> القيامة 2</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][3] }" @click="toggleCategory('أولى ولاد', 3)"> القيامة 3</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][1] }" @click="toggleCategory('أولى ولاد', 1)">القيامة 1</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][2] }" @click="toggleCategory('أولى ولاد', 2)">القيامة 2</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][3] }" @click="toggleCategory('أولى ولاد', 3)">القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][4] }" @click="toggleCategory('أولى ولاد', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][5] }" @click="toggleCategory('أولى ولاد', 5)">الكتاب المقدس</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][5] }" @click="toggleCategory('أولى ولاد', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][6] }" @click="toggleCategory('أولى ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-else-if="oula_banat">
@@ -22,7 +22,7 @@
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][2] }" @click="toggleCategory('أولى بنات', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][3] }" @click="toggleCategory('أولى بنات', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][4] }" @click="toggleCategory('أولى بنات', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][5] }" @click="toggleCategory('أولى بنات', 5)">الكتاب المقدس</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][5] }" @click="toggleCategory('أولى بنات', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][6] }" @click="toggleCategory('أولى بنات', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="tanya_welad">
@@ -30,7 +30,7 @@
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][2] }" @click="toggleCategory('تانية ولاد', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][3] }" @click="toggleCategory('تانية ولاد', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][4] }" @click="toggleCategory('تانية ولاد', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][5] }" @click="toggleCategory('تانية ولاد', 5)">الكتاب المقدس</div>
+        <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][5] }" @click="toggleCategory('تانية ولاد', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][6] }" @click="toggleCategory('تانية ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="tanya_banat">
@@ -38,7 +38,7 @@
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][2] }" @click="toggleCategory('تانية بنات', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][3] }" @click="toggleCategory('تانية بنات', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][4] }" @click="toggleCategory('تانية بنات', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['تانية بنات'][5] }" @click="toggleCategory('تانية بنات', 5)">الكتاب المقدس</div>
+        <div class="text" v-bind:class="{ fade: categories['تانية بنات'][5] }" @click="toggleCategory('تانية بنات', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][6] }" @click="toggleCategory('تانية بنات', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="talta_welad">
@@ -46,7 +46,7 @@
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][2] }" @click="toggleCategory('تالتة ولاد', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][3] }" @click="toggleCategory('تالتة ولاد', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][4] }" @click="toggleCategory('تالتة ولاد', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][5] }" @click="toggleCategory('تالتة ولاد', 5)">الكتاب المقدس</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][5] }" @click="toggleCategory('تالتة ولاد', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][6] }" @click="toggleCategory('تالتة ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="talta_banat">
@@ -54,7 +54,7 @@
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][2] }" @click="toggleCategory('تالتة بنات', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][3] }" @click="toggleCategory('تالتة بنات', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][4] }" @click="toggleCategory('تالتة بنات', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][5] }" @click="toggleCategory('تالتة بنات', 5)">الكتاب المقدس</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][5] }" @click="toggleCategory('تالتة بنات', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][6] }" @click="toggleCategory('تالتة بنات', 6)">معلومات عامة</div>
       </div>
     </div>
@@ -347,18 +347,28 @@ export default {
         this.talta_banat = true;
       }
     },
+    Winner(){
+      var audio = new Audio("https://audio.code.org/goal1.mp3");
+      audio.play();
+    },
+    Loser(){
+      var audio = new Audio("https://audio.code.org/losepoint2.mp3");
+      audio.play();
+    },
     open1b(){
       swal.fire({
         title: "أولى ولاد",
         showDenyButton: true,
         showCancelButton: false,
-        confirmButtonText: "+",
-        denyButtonText: `-`
+        confirmButtonText: `<span style="font-size: 30px; font-weight: bold">&#43;</span>`,
+        denyButtonText: `<span style="font-size: 30px; font-weight: bold">&#8722;</span>`,
       }).then((result) => {
         if (result.isConfirmed) {
           this.answerQuestion1b(true);
+          this.Winner();
         } else if (result.isDenied) {
           this.decreaseAnswer1b();
+          this.Loser();
         }
       });
     },
@@ -367,13 +377,15 @@ export default {
         title: "تانية ولاد",
         showDenyButton: true,
         showCancelButton: false,
-        confirmButtonText: "+",
-        denyButtonText: `-`
+        confirmButtonText: `<span style="font-size: 30px; font-weight: bold">&#43;</span>`,
+        denyButtonText: `<span style="font-size: 30px; font-weight: bold">&#8722;</span>`,
       }).then((result) => {
         if (result.isConfirmed) {
           this.answerQuestion2b(true);
+          this.Winner();
         } else if (result.isDenied) {
           this.decreaseAnswer2b();
+          this.Loser();
         }
       });
     },
@@ -382,13 +394,15 @@ export default {
         title: "تالتة ولاد",
         showDenyButton: true,
         showCancelButton: false,
-        confirmButtonText: "+",
-        denyButtonText: `-`
+        confirmButtonText: `<span style="font-size: 30px; font-weight: bold">&#43;</span>`,
+        denyButtonText: `<span style="font-size: 30px; font-weight: bold">&#8722;</span>`,
       }).then((result) => {
         if (result.isConfirmed) {
           this.answerQuestion3b(true);
+          this.Winner();
         } else if (result.isDenied) {
           this.decreaseAnswer3b();
+          this.Loser();
         }
       });
     },
@@ -397,13 +411,15 @@ export default {
         title: "أولى بنات",
         showDenyButton: true,
         showCancelButton: false,
-        confirmButtonText: "+",
-        denyButtonText: `-`
+        confirmButtonText: `<span style="font-size: 30px; font-weight: bold">&#43;</span>`,
+        denyButtonText: `<span style="font-size: 30px; font-weight: bold">&#8722;</span>`,
       }).then((result) => {
         if (result.isConfirmed) {
           this.answerQuestion1g(true);
+          this.Winner();
         } else if (result.isDenied) {
           this.decreaseAnswer1g();
+          this.Loser();
         }
       });
     },
@@ -412,13 +428,15 @@ export default {
         title: "تانية بنات",
         showDenyButton: true,
         showCancelButton: false,
-        confirmButtonText: "+",
-        denyButtonText: `-`
+        confirmButtonText: `<span style="font-size: 30px; font-weight: bold">&#43;</span>`,
+        denyButtonText: `<span style="font-size: 30px; font-weight: bold">&#8722;</span>`,
       }).then((result) => {
         if (result.isConfirmed) {
           this.answerQuestion2g(true);
+          this.Winner();
         } else if (result.isDenied) {
           this.decreaseAnswer2g();
+          this.Loser();
         }
       });
     },
@@ -427,13 +445,15 @@ export default {
         title: "تالتة بنات",
         showDenyButton: true,
         showCancelButton: false,
-        confirmButtonText: "+",
-        denyButtonText: `-`
+        confirmButtonText: `<span style="font-size: 30px; font-weight: bold">&#43;</span>`,
+        denyButtonText: `<span style="font-size: 30px; font-weight: bold">&#8722;</span>`,
       }).then((result) => {
         if (result.isConfirmed) {
           this.answerQuestion3g(true);
+          this.Winner();
         } else if (result.isDenied) {
           this.decreaseAnswer3g();
+          this.Loser();
         }
       });
     },
@@ -568,6 +588,10 @@ export default {
 </script>
 
 <style scoped>
+div img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .text{
   display: flex;
   align-items: center;
@@ -751,3 +775,5 @@ export default {
   transition: opacity 0.5s ease;
 }
 </style>
+
+
