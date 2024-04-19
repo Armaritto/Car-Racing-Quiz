@@ -1,4 +1,4 @@
-# easter
+# Car-Racing-Quiz
 
 ## Project setup
 ```
