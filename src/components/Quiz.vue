@@ -44,9 +44,9 @@
       <div class="categories" v-if="talta_welad">
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][1] }" @click="toggleCategory('تالتة ولاد', 1)"> القيامة 1</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][2] }" @click="toggleCategory('تالتة ولاد', 2)"> القيامة 2</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][3] }" @click="toggleCategory('تالتة ولاد', 3)"> القيامة 3</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][4] }" @click="toggleCategory('تالتة ولاد', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][5] }" @click="toggleCategory('تالتة ولاد', 5)">شخصيات كتابية</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][3] }" @click="toggleCategory('تالتة ولاد', 3)">طقس</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][4] }" @click="toggleCategory('تالتة ولاد', 4)">ألحان</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][5] }" @click="toggleCategory('تالتة ولاد', 5)">الكتاب المقدس</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][6] }" @click="toggleCategory('تالتة ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="talta_banat">
@@ -181,7 +181,7 @@ export default {
         },
         'تانية ولاد': {
           1: {
-            question: 'القيامة 1',
+            question: `<span>من أنا؟ كنت مجرم مسجون و هتف الشعب بأسمي و في الاخر المسيح اخد مكاني</span><br><span>(يوسف الرامي - باراباس - بطرس)</span>`,
             answer: 'الجواب'
           },
           2: {
@@ -241,16 +241,16 @@ export default {
             answer: 'باراباس'
           },
           3: {
-            question: '',
-            answer: ''
+            question: 'ما الذي يفعله أبونا في القداس يشير الى دحرجة الحجر عن القبر؟',
+            answer: 'رفع الابروسفارين'
           },
           4: {
             question: 'نقول في الهيتنيات ان مبوق القيامة هو اول من أعلن عن قيامة المسيح فمن هو؟',
             answer: 'الملاك ميخائيل'
           },
           5: {
-            question: '',
-            answer: ''
+            question: ' القصة اللي في سفر الخروج بتشير الى صلب المسيح هي ـــــ و اللي اتاخد منها تسمية بصخة اللي معناها ـــــ',
+            answer: 'خروف الفصح - عبور'
           },
           6: {
             question: 'من أي ماده يتم تصنيع الزجاج',
