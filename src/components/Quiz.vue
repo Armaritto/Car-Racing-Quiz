@@ -233,28 +233,28 @@ export default {
         },
         'تالتة ولاد': {
           1: {
-            question: 'القيامة 1',
-            answer: 'الجواب'
+            question: 'من انا؟ انا من الرامة و كنت غني جدا و قعد المسيح في ممتلكاتي 3 ايام',
+            answer: 'يوسف الرامي'
           },
           2: {
-            question: 'القيامة 2',
-            answer: 'الجواب'
+            question: 'من أنا؟ كنت مجرم مسجون و هتف الشعب بأسمي و في الاخر المسيح اخد مكاني',
+            answer: 'باراباس'
           },
           3: {
-            question: 'القيامة 3',
-            answer: 'الجواب'
+            question: '',
+            answer: ''
           },
           4: {
-            question: 'طقس',
-            answer: 'الجواب'
+            question: 'نقول في الهيتنيات ان مبوق القيامة هو اول من أعلن عن قيامة المسيح فمن هو؟',
+            answer: 'الملاك ميخائيل'
           },
           5: {
-            question: 'الكتاب المقدس',
-            answer: 'الجواب'
+            question: '',
+            answer: ''
           },
           6: {
-            question: 'معلومات عامة',
-            answer: 'الجواب'
+            question: 'من أي ماده يتم تصنيع الزجاج',
+            answer: 'الرمال'
           }
         },
         'تالتة بنات': {
@@ -304,11 +304,13 @@ export default {
       let q = this.Questions[team][index].question;
       let ans = this.Questions[team][index].answer;
       swal.fire({
-        title: q,
+        width: '800px',
+        height: '500px',
+        title: `<span style="font-size: 50px; font-weight: bold">${q}</span>`,
         confirmButtonText: "الاجابة",
       }).then((result) => {
         if (result.isConfirmed) {
-          swal.fire(ans);
+          swal.fire(`<span style="font-size: 50px; font-weight: bold">${ans}</span>`);
         }
       });
       this.categories[team][index] = true;
