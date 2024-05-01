@@ -10,11 +10,11 @@
         <div @click="fadeOthers($event)">تالتة بنات</div>
       </div>
       <div class="categories" v-if="oula_welad">
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][1] }" @click="toggleCategory('أولى ولاد', 1)">القيامة 1</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][2] }" @click="toggleCategory('أولى ولاد', 2)">القيامة 2</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][3] }" @click="toggleCategory('أولى ولاد', 3)">القيامة 3</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][4] }" @click="toggleCategory('أولى ولاد', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][5] }" @click="toggleCategory('أولى ولاد', 5)">شخصيات كتابية</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][1] }" @click="toggleCategory('أولى ولاد', 1)">معلومات عن القيامة</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][2] }" @click="toggleCategory('أولى ولاد', 2)">انا مين؟ 1</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][3] }" @click="toggleCategory('أولى ولاد', 3)">انا مين؟ 2</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][4] }" @click="toggleCategory('أولى ولاد', 4)">انا مين؟ 3</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][5] }" @click="toggleCategory('أولى ولاد', 5)">طقس</div>
         <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][6] }" @click="toggleCategory('أولى ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-else-if="oula_banat">
@@ -42,8 +42,8 @@
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][6] }" @click="toggleCategory('تانية بنات', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="talta_welad">
-        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][1] }" @click="toggleCategory('تالتة ولاد', 1)"> القيامة 1</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][2] }" @click="toggleCategory('تالتة ولاد', 2)"> القيامة 2</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][1] }" @click="toggleCategory('تالتة ولاد', 1)">انا مين؟ 1</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][2] }" @click="toggleCategory('تالتة ولاد', 2)">انا مين؟ 2</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][3] }" @click="toggleCategory('تالتة ولاد', 3)">طقس</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][4] }" @click="toggleCategory('تالتة ولاد', 4)">ألحان</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][5] }" @click="toggleCategory('تالتة ولاد', 5)">الكتاب المقدس</div>
@@ -129,28 +129,28 @@ export default {
       Questions: {
         'أولى ولاد': {
           1: {
-            question: 'القيامة 1',
-            answer: 'الجواب'
+            question: `<span>السيد المسيح قعد كام يوم في القبر؟</span><br><span>(2 - 3 - 4)</span>`,
+            answer: '3'
           },
           2: {
-            question: 'القيامة 2',
-            answer: 'الجواب'
+            question: 'كنت واقف تحت بابا يسوع وكانت معاه ماما العدرا',
+            answer: 'يوحنا الحبيب'
           },
           3: {
-            question: 'القيامة 3',
-            answer: 'الجواب'
+            question: 'قابلت المسيح وكنت فاكراه البستاني؟',
+            answer: 'مريم المجدلية'
           },
           4: {
-            question: 'طقس',
-            answer: 'الجواب'
+            question: 'مكنش مصدق ان المسيح قام والسيد المسيح خلاني اشوف أماكن المسامير؟',
+            answer: 'توما'
           },
           5: {
-            question: 'الكتاب المقدس',
-            answer: 'الجواب'
+            question: `<span>بنصلي قداس القيامة بالطقس</span><br><span>(الفرايحي -الحزايني - السنوي)</span>`,
+            answer: 'الفرايحي'
           },
           6: {
-            question: 'معلومات عامة',
-            answer: 'الجواب'
+            question: 'مين التلميذين اللي جريوا على القبر ولقوا القبر فاضي؟',
+            answer: 'بطرس و يوحنا'
           }
         },
         'أولى بنات': {
@@ -233,11 +233,11 @@ export default {
         },
         'تالتة ولاد': {
           1: {
-            question: 'من انا؟ انا من الرامة و كنت غني جدا و قعد المسيح في ممتلكاتي 3 ايام',
+            question: 'انا من الرامة و كنت غني جدا و قعد المسيح في ممتلكاتي 3 ايام',
             answer: 'يوسف الرامي'
           },
           2: {
-            question: 'من أنا؟ كنت مجرم مسجون و هتف الشعب بأسمي و في الاخر المسيح اخد مكاني',
+            question: 'كنت مجرم مسجون و هتف الشعب بأسمي و في الاخر المسيح اخد مكاني',
             answer: 'باراباس'
           },
           3: {
