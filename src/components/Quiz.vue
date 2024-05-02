@@ -18,7 +18,7 @@
         <div class="text" v-bind:class="{ fade: categories['أولى ولاد'][6] }" @click="toggleCategory('أولى ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-else-if="oula_banat">
-        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][1] }" @click="toggleCategory('أولى ولاد', 1)"> القيامة 1</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][1] }" @click="toggleCategory('أولى بنات', 1)"> القيامة 1</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][2] }" @click="toggleCategory('أولى بنات', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][3] }" @click="toggleCategory('أولى بنات', 3)">صح و غلط</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][4] }" @click="toggleCategory('أولى بنات', 4)">شخصيات كتابية 1</div>
@@ -141,7 +141,7 @@ export default {
             answer: 'مريم المجدلية'
           },
           4: {
-            question: 'مكنش مصدق ان المسيح قام والسيد المسيح خلاني اشوف أماكن المسامير؟',
+            question: 'مكنتش مصدق ان المسيح قام والسيد المسيح خلاني اشوف أماكن المسامير؟',
             answer: 'توما'
           },
           5: {
