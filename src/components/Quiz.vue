@@ -20,17 +20,17 @@
       <div class="categories" v-else-if="oula_banat">
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][1] }" @click="toggleCategory('أولى ولاد', 1)"> القيامة 1</div>
         <div class="text" v-bind:class="{ fade: categories['أولى بنات'][2] }" @click="toggleCategory('أولى بنات', 2)"> القيامة 2</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][3] }" @click="toggleCategory('أولى بنات', 3)"> القيامة 3</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][4] }" @click="toggleCategory('أولى بنات', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][5] }" @click="toggleCategory('أولى بنات', 5)">شخصيات كتابية</div>
-        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][6] }" @click="toggleCategory('أولى بنات', 6)">معلومات عامة</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][3] }" @click="toggleCategory('أولى بنات', 3)">صح و غلط</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][4] }" @click="toggleCategory('أولى بنات', 4)">شخصيات كتابية 1</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][5] }" @click="toggleCategory('أولى بنات', 5)">شخصيات كتابية 2</div>
+        <div class="text" v-bind:class="{ fade: categories['أولى بنات'][6] }" @click="toggleCategory('أولى بنات', 6)">شخصيات كتابية 3</div>
       </div>
       <div class="categories" v-if="tanya_welad">
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][1] }" @click="toggleCategory('تانية ولاد', 1)"> القيامة 1</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][2] }" @click="toggleCategory('تانية ولاد', 2)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][3] }" @click="toggleCategory('تانية ولاد', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][4] }" @click="toggleCategory('تانية ولاد', 4)">طقس</div>
-        <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][5] }" @click="toggleCategory('تانية ولاد', 5)">شخصيات كتابية</div>
+        <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][5] }" @click="toggleCategory('تانية ولاد', 5)">الكتاب المقدس</div>
         <div class="text" v-bind:class="{ fade: categories['تانية ولاد'][6] }" @click="toggleCategory('تانية ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="tanya_banat">
@@ -39,7 +39,7 @@
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][3] }" @click="toggleCategory('تانية بنات', 3)"> القيامة 3</div>
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][4] }" @click="toggleCategory('تانية بنات', 4)">طقس</div>
         <div class="text" v-bind:class="{ fade: categories['تانية بنات'][5] }" @click="toggleCategory('تانية بنات', 5)">شخصيات كتابية</div>
-        <div class="text" v-bind:class="{ fade: categories['تانية بنات'][6] }" @click="toggleCategory('تانية بنات', 6)">معلومات عامة</div>
+        <div class="text" v-bind:class="{ fade: categories['تانية بنات'][6] }" @click="toggleCategory('تانية بنات', 6)">صح و غلط</div>
       </div>
       <div class="categories" v-if="talta_welad">
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][1] }" @click="toggleCategory('تالتة ولاد', 1)">انا مين؟ 1</div>
@@ -50,9 +50,9 @@
         <div class="text" v-bind:class="{ fade: categories['تالتة ولاد'][6] }" @click="toggleCategory('تالتة ولاد', 6)">معلومات عامة</div>
       </div>
       <div class="categories" v-if="talta_banat">
-        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][1] }" @click="toggleCategory('تالتة بنات', 1)"> القيامة 1</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][2] }" @click="toggleCategory('تالتة بنات', 2)"> القيامة 2</div>
-        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][3] }" @click="toggleCategory('تالتة بنات', 3)"> القيامة 3</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][1] }" @click="toggleCategory('تالتة بنات', 1)">رتب الاحداث</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][2] }" @click="toggleCategory('تالتة بنات', 2)"> القيامة 1</div>
+        <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][3] }" @click="toggleCategory('تالتة بنات', 3)"> القيامة 2</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][4] }" @click="toggleCategory('تالتة بنات', 4)">طقس</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][5] }" @click="toggleCategory('تالتة بنات', 5)">شخصيات كتابية</div>
         <div class="text" v-bind:class="{ fade: categories['تالتة بنات'][6] }" @click="toggleCategory('تالتة بنات', 6)">معلومات عامة</div>
@@ -155,80 +155,80 @@ export default {
         },
         'أولى بنات': {
           1: {
-            question: 'القيامة 1',
-            answer: 'الجواب'
+            question: 'كم عدد التلاميذ الذين كانوا يصلون في العلية بعد القيامة عندما ظهر لهم الرب يسوع ؟',
+            answer: '11'
           },
           2: {
-            question: 'القيامة 2',
-            answer: 'الجواب'
+            question: 'احد القيامة هو الاحد الكام ؟',
+            answer: 'الثامن'
           },
           3: {
-            question: 'القيامة 3',
-            answer: 'الجواب'
+            question: 'المريمات هما اللي دحرجوا الحجر',
+            answer: 'غلط'
           },
           4: {
-            question: 'طقس',
-            answer: 'الجواب'
+            question: 'مين من التلاميذ خان المسيح ؟',
+            answer: 'يهوذا الاسخريوطي'
           },
           5: {
-            question: 'الكتاب المقدس',
-            answer: 'الجواب'
+            question: 'مين من التلاميذ انكر المسيح ؟',
+            answer: 'بطرس'
           },
           6: {
-            question: 'معلومات عامة',
-            answer: 'الجواب'
+            question: 'مين كان موجود تحت الصليب ؟',
+            answer: 'ماما العدرا و يوحنا الحبيب'
           }
         },
         'تانية ولاد': {
           1: {
-            question: `<span>من أنا؟ كنت مجرم مسجون و هتف الشعب بأسمي و في الاخر المسيح اخد مكاني</span><br><span>(يوسف الرامي - باراباس - بطرس)</span>`,
-            answer: 'الجواب'
+            question: `<span>مين اول حد راح لقبر بابا يسوع يوم الحد الفجر</span><br><span>(مريم المجدلية - يوحنا - بطرس)</span>`,
+            answer: 'مريم المجدلية'
           },
           2: {
-            question: 'القيامة 2',
-            answer: 'الجواب'
+            question: `<span>بنفضل نحتفل بقيامة ربنا يسوع كام يوم</span><br><span>(1 - 40 - 50 - 55)</span>`,
+            answer: '50'
           },
           3: {
-            question: 'القيامة 3',
-            answer: 'الجواب'
+            question: `<span>مين دحرج الحجر لما المريمات راحوا القبر</span><br><span>(الحجر كان متدحرج قبل ما يوصلوا - بطرس و يوحنا - الحراس - البستاني)</span>`,
+            answer: 'الحجر كان متدحرج قبل ما يوصلوا'
           },
           4: {
-            question: 'طقس',
-            answer: 'الجواب'
+            question: `<span>ايه الحاجة الوحيدة اللي بنعملها زيادة في قداس احد القيامة و فترة الخماسين و مبنعملهاش في القداسات العاديه</span><br><span>(الزفة - لبس التونية - التناول في اول القداس)</span>`,
+            answer: 'الزفة'
           },
           5: {
-            question: 'الكتاب المقدس',
-            answer: 'الجواب'
+            question: `<span>مريم المجدلية قالت ايه لما بابا يسوع نداها في البستان</span><br><span>(ربوني - القبر فاضي - الهي - اين البستاني)</span>`,
+            answer: 'ربوني'
           },
           6: {
-            question: 'معلومات عامة',
-            answer: 'الجواب'
+            question: `<span>ايه الرقم اللي مش مكتوب على ولا ورقة فلوس في مصر</span><br><span>(5 - 20 - 30 - 50)</span>`,
+            answer: '30'
           }
         },
         'تانية بنات': {
           1: {
-            question: 'القيامة 1',
-            answer: 'الجواب'
+            question: '<span>الانجيل بيقول خرج بطرس و التلميذ الاخر واتيا الي القبر مين هو التلميذ الاخر</span><br><span>(مرقس - توما - يوحنا)</span>',
+            answer: 'يوحنا'
           },
           2: {
-            question: 'القيامة 2',
-            answer: 'الجواب'
+            question: '<span>مين الي حمل الصليب مع الرب يسوع ؟</span><br><span>(سمعان القيرواني - يهوذا الاسخريوطي - نيقوديموس)</span>',
+            answer: 'سمعان القيرواني'
           },
           3: {
-            question: 'القيامة 3',
-            answer: 'الجواب'
+            question: 'ليس هو ههنا لكنه ـــــ كما ـــــ (مت 6:28)',
+            answer: 'قام - قال'
           },
           4: {
-            question: 'طقس',
-            answer: 'الجواب'
+            question: 'في اي يوم من ايام الاسبوع احتفلت الكنيسة بعيد القيامة السنة الماضية؟',
+            answer: 'الاحد'
           },
           5: {
-            question: 'الكتاب المقدس',
-            answer: 'الجواب'
+            question: 'اذكر ٣ اسماء من المريمات',
+            answer: 'مريم العذراء - مريم المجدلية - مريم أم يعقوب'
           },
           6: {
-            question: 'معلومات عامة',
-            answer: 'الجواب'
+            question: 'باع يهوذا المسيح ب٢٠ من الفضة',
+            answer: 'غلط'
           }
         },
         'تالتة ولاد': {
@@ -259,28 +259,29 @@ export default {
         },
         'تالتة بنات': {
           1: {
-            question: 'القيامة 1',
-            answer: 'الجواب'
+            question: ' دحرجة الحجر - ظهور المسيح في العلية - زيارة المريمات - قيامة المسيح' ,
+            answer: 'قيامة المسيح - دحرجة الحجر - زيارة المريمات - ظهور المسيح في العلية'
           },
           2: {
-            question: 'القيامة 2',
-            answer: 'الجواب'
+            question: 'اين ذهب المسيح بعد موته على الصليب وماذا فعل هناك؟',
+            answer: 'ذهب للجحيم وهزم الشيطان واخذ نفوس الابرار الى الفردوس'
           },
           3: {
-            question: 'القيامة 3',
-            answer: 'الجواب'
+            question: '«يَا سَيِّدُ، إِنْ كُنْتَ أَنْتَ قَدْ حَمَلْتَهُ فَقُلْ لِي أَيْنَ وَضَعْتَهُ، وَأَنَا آخُذُهُ».\n' +
+                'الاية دي قالتها مريم المجدلية لمين؟',
+            answer: 'المسيح (البستاني)'
           },
           4: {
-            question: 'طقس',
-            answer: 'الجواب'
+            question: 'ربنا يسوع اخذ 5 جراحات في جسده. افتكري بنشوفهم فين في القداس؟',
+            answer: 'الخمس خروم بتوع الحمل'
           },
           5: {
-            question: 'الكتاب المقدس',
-            answer: 'الجواب'
+            question: 'مين النبي اللي كان هو نفسه نبوة عن موت وقيامة المسيح؟',
+            answer: 'يونان النبي'
           },
           6: {
-            question: 'معلومات عامة',
-            answer: 'الجواب'
+            question: 'كم عدد القارات الموجودة في الكرة الأرضية؟' ,
+            answer: '7'
           }
         },
 
